@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    block meta
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    
+    block title
+      title= 'Welcome to Template' 
+
+    link(href='/css/heraapp-sass.css', rel='stylesheet')
+  body 
+    //- include header.jade
+    
+    main
+      div.container(style="margin:30px;margin-top:2cm;")
+        block content
+          h2 Well done sir
+          p This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.
+          p Make sure to keep all page content within the
+          a#menu-toggle.btn.btn-default(href='#menu-toggle') Toggle Menu
+        
+    link(href='/css/simple-sidebar.css', rel='stylesheet')
+      
+  footer(id="footer" role="contentinfo" data-module="components/footer")
+    //- include footer.jade
+
+  script(src="/js/prototype.js")
+
+  
+  script.
+     console.log('template reder');
+  
+  block scripts
+    script(src='/js/templateM.js')
