@@ -9,6 +9,6 @@ exports.render = function(req, res){
 
    res.render(PAGE , {
      "title" : "Hello World",
-     "message" : "How are things."
+     "message" : "Getting Started"
    }); //jade
 };

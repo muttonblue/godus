@@ -55,8 +55,7 @@ module.exports = function() {
   }));
 
   app.use(express.static('public'));
-  app.use(express.static('public'));
-
+ 
   console.info('<<< END reder express.js <<<');
   return app;
 };

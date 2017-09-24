@@ -10,10 +10,10 @@ html(lang="en")
 
     link(href='/css/heraapp-sass.css', rel='stylesheet')
   body 
-    //- include header.jade
+    include header.jade
     
     main
-      div.container(style="margin:30px;margin-top:2cm;")
+      div.container(style="margin-left:20px;margin-rigth:20px;")
         block content
           h2 Well done sir
           p This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.

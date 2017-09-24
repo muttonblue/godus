@@ -153,4 +153,9 @@
     layout: $('godus3')
   });
   godus3.snoop();
+
+  var textInput = godus.godusTempName.mygodus.textInput;
+      textInput.onchange = function(event) {
+    console.log(this.value);
+  };
 })();
